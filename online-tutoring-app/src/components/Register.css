@@ -1,0 +1,78 @@
+/* Register.css */
+
+.register-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Fallback background color */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1583514287866-6f5d0a02b8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc5N3wwfDF8c2VhcmNofDV8fHR1dG9yaWFsJTIwYXBwfGVufDB8fHx8MTY3MDI0NjM1Mg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover; /* Full cover background image */
+    filter: blur(8px); /* Blur effect for background */
+    z-index: 1; /* Place background behind content */
+  }
+  
+  .register-form {
+    position: relative;
+    z-index: 2; /* Place form above background */
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 400px; /* Fixed width */
+  }
+  
+  .register-form h1 {
+    margin-bottom: 20px; /* Space below header */
+    color: #007bff; /* Header color */
+    text-align: center; /* Centered header */
+  }
+  
+  .register-form input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+  
+  .register-form .button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding */
+    background-color: #007bff; /* Button background */
+    color: white; /* Button text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition for hover */
+  }
+  
+  .register-form .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .register-form p {
+    text-align: center; /* Centered text */
+    margin-top: 15px; /* Space above paragraph */
+  }
+  
+  .register-form a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline */
+  }
+  
+  .register-form a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
